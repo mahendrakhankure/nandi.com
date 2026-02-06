@@ -1,0 +1,216 @@
+var base_url = 'https://'+window.location.host;
+function updateWallet(ids,div){
+    $('.flexbox').show();
+    $.ajax({
+        type: "POST",
+        url: base_url+"/e6e9a4f45aa1534488f516530c534059",
+        data: Object.assign({}, ids),
+        success: function (res) {
+            $('.flexbox').hide();
+            var data = jQuery.parseJSON(res);
+            if(data['status']==200){
+                success(data['message']);
+                $('#'+div).remove();
+            }else{
+                error(data['message']);
+            }
+        }
+    });
+}
+
+function updateWalletStar(ids,div){
+    $('.flexbox').show();
+    $.ajax({
+        type: "POST",
+        url: base_url+"/d50323af60643ba9e1da40d643c44966",
+        data: Object.assign({}, ids),
+        success: function (res) {
+            $('.flexbox').hide();
+            var data = jQuery.parseJSON(res);
+            if(data['status']==200){
+                success(data['message']);
+                $('#'+div).remove();
+            }else{
+                error(data['message']);
+            }
+        }
+    });
+}
+
+function updateWalletKing(ids,div){
+    $('.flexbox').show();
+    $.ajax({
+        type: "POST",
+        url: base_url+"/7ae7165a06ebd76c2c5ee3d24213805e",
+        data: Object.assign({}, ids),
+        success: function (res) {
+            $('.flexbox').hide();
+            var data = jQuery.parseJSON(res);
+            if(data['status']==200){
+                success(data['message']);
+                $('#'+div).remove();
+            }else{
+                error(data['message']);
+            }
+        }
+    });
+}
+
+
+function getTabData(id,name,o,j,c){
+    if(name=='JODI'){
+        o = j;
+    }
+    $('.flexbox').show();
+    if($('#'+name).is(':empty')){
+        $.ajax({
+            type: "POST",
+            url: base_url+"/ea6f993d7d823816d85299977da11f45",
+            data: {id:id,name:name},
+            success: function (res) {
+                $('.flexbox').hide();
+                var data = jQuery.parseJSON(res);
+                if(data.length>0){
+                    var ta = 0;
+                    if(name=='JODI'){
+                        var d = data;
+                    }else{
+                        var d = data[0];
+                    }
+                    var dome = '<p id="'+name+'123" style="float: right;font-size: 15px;font-weight: 600;"></p>';
+                    dome +='<table class="table table-resopncive text-center"><thead></thead><tbody>';
+                    $(d).each(function(t) {
+                        var sr = t+1;
+                        if(name=='JODI'){
+                            sr = sr-1;
+                        }
+                        if(sr==10){
+                            sr=0;
+                        }
+                        dome += '<tr><td class="sr">'+sr+'</td>';
+                        $(d[t]).each(function(k) {
+                        	if(o != undefined && parseInt(o)==parseInt(d[t][k].akda)){
+                                dome += '<td class="win">'+d[t][k].akda+'</td>';
+                            }else{
+                                dome += '<td class="l">'+d[t][k].akda+'</td>';
+                            }
+                        });
+                        dome += '<td></td>';
+                        dome += '</tr>';
+                        dome += '<tr><td>-</td>';
+                        var tJodi = 0;
+                        $(d[t]).each(function(k) {
+                            
+                            if(d[t][k].point != null && d[t][k].point != '0'){
+                                var p = d[t][k].point;
+                                dome += '<td class="bet">'+p+'</td>';
+                            }else{
+                                var p = 0;
+                                dome += '<td>'+p+'</td>';
+                            }
+                            tJodi += parseInt(p);
+                            ta += parseInt(p);
+                        });
+                        dome += '<td  class="tBet">'+tJodi+'</td>';
+                        dome += '</tr>';
+                    });
+                    dome +='</tbody></table>';
+                    $('#'+name).append(dome);
+                    $('#'+name+'123').append('Total '+ta);
+                    if(name!='JODI'){
+                        var taC = 0;
+                        var dome1 ='<p id="'+name+'456" style="float: right;font-size: 15px;font-weight: 600;"></p><table class="table table-resopncive text-center"><thead></thead><tbody>';
+                        $(data[1]).each(function(t) {
+                            var sr = t+1;
+                            if(sr==10){
+                                sr=0;
+                            }
+                            dome1 += '<tr><td>'+sr+'</td>';
+                            $(data[1][t]).each(function(k) {
+                                if(c != undefined && parseInt(c)==parseInt(data[1][t][k].akda)){
+                                    dome1 += '<td class="win">'+data[1][t][k].akda+'</td>';
+                                }else{
+                                    dome1 += '<td class="p">'+data[1][t][k].akda+'</td>';
+                                }
+                            });
+                            dome1 += '<td></td>';
+                            dome1 += '</tr>';
+                            dome1 += '<tr><td>-</td>';
+                            var tClose = 0;
+                            $(data[1][t]).each(function(k) {
+                                if(data[1][t][k].point != null && data[1][t][k].point != '0'){
+                                    var p = data[1][t][k].point;
+                                    dome1 += '<td class="bet">'+p+'</td>';
+                                }else{
+                                    var p = 0;
+                                    dome1 += '<td>'+p+'</td>';
+                                }
+                                tClose += parseInt(p);
+                                taC += parseInt(p);
+                            });
+                            dome1 += '<td class="tBet">'+tClose+'</td>';
+                            dome1 += '</tr>';
+                        });
+                        dome1 +='</tbody></table>';
+                        $('#'+name+'close').append(dome1);
+                        $('#'+name+'456').append('Total '+taC);
+                    }
+                }else{
+                    error(data['message']);
+                }
+            }
+        });
+    }else{
+        $('.flexbox').hide();
+    }
+}
+
+function updatePending(ids,div,t){
+    $('.flexbox').show();
+    $.ajax({
+        type: "POST",
+        url: base_url+"/fd4c7ff1732d564d0f412461c4795af8",
+        data: {ids:ids,res:div,type:t},
+        success: function (res) {
+            $('.flexbox').hide();
+            // console.log(res)
+            var data = jQuery.parseJSON(res);
+            if(data['status']==200){
+                success(data['message']);
+                $('#'+div).remove();
+                $('.'+div).remove();
+            }else{
+                error(data['message']);
+            }
+        }
+    });
+}
+
+ function updateLoseBet(table,ids,resultId){
+        $('#'+resultId).hide();
+        if(table == 'regular_bazar_games')  {
+            table == 'regular_bazar_games'
+            var u ='/fd4c7ff1732d564d0f412461c4795af8'
+        }else if(table == 'king_bazar_game')  {
+            table = 'king_bazar_game';
+            var u ='/ec516ad04cf15b3a7c32a132c187f006'
+        }else if(table == 'starline_bazar_game')  {
+            table == 'starline_bazar_game'
+            var u ='/f4ef46e12f8b9f9b7bfc2bddd832080a'
+        }
+        $.ajax({
+            type: "POST",
+            url: base_url+u,
+            data: {ids:ids,res:resultId},
+            success: function (res) {
+                var data = jQuery.parseJSON(res);
+                console.log(data)
+                if(data['code']==200){
+                    success(data['message']);
+                }else{
+                    error(data['message']);
+                }
+            }
+        });
+        
+    }

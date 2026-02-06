@@ -1,0 +1,206 @@
+.batt-name  {
+    width: 20vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    h3 {
+        @include comp_border($bd-color);
+        padding: 5px 10px;
+        font-size: $h3-lg;
+    }
+     
+}
+.batt-notes {
+     
+    h3 {
+        @include center-heading();
+    }
+
+}
+.batt-date  {
+    width: 25vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    @include comp_border($bd-color);
+    padding: 5px 10px;
+
+        select  {
+            background-color: $bg-primary-dark;
+            width: 100%;
+            border: none;
+            text-align: center;
+            font-size: $select-font;
+            color: $white-color;
+            appearance: none;
+            &:focus {
+                outline: 0!important;
+              }
+          }
+
+     
+}
+
+// Batt-Common-htp
+.htp    {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    a {
+        border-bottom: 2px solid goldenrod;
+        padding-bottom: 0.3rem;
+    }
+}
+
+// Game Type 
+
+.game-type  {
+    @include comp_border();
+    box-sizing: border-box;
+    margin-top: 10px;
+    form {
+        display: flex;
+       justify-content: space-between;
+       div {
+        width: 49%;
+        display: inline-block;
+        padding-left: 2rem;
+       }
+       .gt-open {
+        border-right: 2px solid white;
+       }
+       input[type=radio]    {
+        -ms-transform: scale(2.3); /* IE 9 */
+        -webkit-transform: scale(2.3); /* Chrome, Safari, Opera */
+         transform: scale(2.3);
+         background-color: transparent !important;
+       }
+       label {
+        padding:5px;
+        font-size: $lg-font;
+        margin-left: 3rem;  
+       }
+    }
+  }
+
+
+//   Selct Variation Type and Digit
+.var-type-digit {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 16px;
+    border: 2px solid white;
+    div.form-check {
+        padding: 8px;
+        box-sizing: border-box;
+        border-right: 2px solid white;
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+.choose-digit   {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.6rem;
+}
+
+// Betting Variation Type Submit Form
+
+.bett-var-type-sf   {
+    
+    h3 {
+      
+        @include center-heading;
+    }
+    // .var-type-if    {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+    input {
+        width: 49%;
+        padding: 0.4rem 0.4rem 0.4rem 2rem;
+        @include comp_border_rad(10px);
+        background-color: transparent;
+        @include comp_border();
+    }
+    button {
+       margin: 1rem 0rem 1rem 43%;
+       padding: 0.6rem 1.2rem;
+       background-image: $bg-secondary;
+       @include comp_border_rad(10px);
+       font-weight: 600;
+    }
+    button.btn-v2   {
+        margin-left: 37.75%;
+    }
+}
+// Batting Chiplist
+
+.chiplist-wrapper   {
+    margin: 1.6rem 0rem;
+    h3 {
+        @include center-heading;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+    }
+    .chiplist{
+        // margin: 1rem;
+        ul {
+            display: flex;
+            justify-content: center;
+            margin-left: -2rem;
+            column-gap: 0.8rem;
+            img {
+                width: 5rem;
+            }
+        }
+        
+    }
+}
+
+
+
+// Betting List Table 
+.bett-table {
+    margin: 1rem 0rem;
+    table {
+        width: 100%;
+        tr {
+            display: flex;
+            justify-content: space-between;
+        }
+        thead {
+            @include comp_border-bottom();
+            text-transform: uppercase;
+             
+            tr {
+                padding-bottom: 0.5rem;  
+            }
+        }
+        tbody {
+            @include comp_border-bottom();
+            height: 100px;
+        }
+    }
+}
+
+
+
+
+//   Betting Action Buttons 
+
+.bett-action    {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 10%;
+    a {
+        background: $bg-secondary;
+        padding: 0.5rem 1rem;
+        @include comp_border_rad(10px);
+        color: $text-color-secondary;
+        font-weight: 700;
+        font-size: $text-lg;
+    }
+}

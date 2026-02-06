@@ -1,0 +1,13 @@
+
+.app-heading    {
+    h2 {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1.2;
+        line-height: 25px;
+        text-transform: uppercase;
+        @include text-color-lg();
+    }
+}
+
+ 

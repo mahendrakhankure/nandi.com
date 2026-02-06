@@ -1,0 +1,330 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+* body {
+  background-color: #420518;
+  color: #fff;
+  width: 100%;
+}
+
+.container-fluid {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.container-fluid .row {
+  --bs-gutter-x: 0rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.dark {
+  background-color: #28040f;
+}
+
+.sec-margin {
+  margin-top: 1.6rem !important;
+}
+
+.ele-margin-tb {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.topbar-wrapper {
+  width: 100%;
+  height: 3rem;
+  background-color: #28040f;
+}
+.topbar-wrapper .topbar-content {
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.topbar-wrapper .topbar-content .diposit-btn {
+  background-image: linear-gradient(90deg, #ffeb76, #c09a2f);
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.topbar-wrapper .topbar-content p {
+  display: inline-block;
+}
+.topbar-wrapper .topbar-content p span i {
+  border-radius: 50%;
+  padding: 5px 6px;
+  border: 2px solid #fff;
+}
+
+.app-heading h2 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.2;
+  line-height: 25px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ffeb76, #c09a2f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.batt-name {
+  width: 20vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.batt-name h3 {
+  border: 2px solid goldenrod;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.batt-notes h3 {
+  text-align: center;
+  font-size: 22px;
+}
+
+.batt-date {
+  width: 25vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid goldenrod;
+  padding: 5px 10px;
+}
+.batt-date select {
+  background-color: #28040f;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.batt-date select:focus {
+  outline: 0 !important;
+}
+
+.htp {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.htp a {
+  border-bottom: 2px solid goldenrod;
+  padding-bottom: 0.3rem;
+}
+
+.game-type {
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.game-type form {
+  display: flex;
+  justify-content: space-between;
+}
+.game-type form div {
+  width: 49%;
+  display: inline-block;
+  padding-left: 2rem;
+}
+.game-type form .gt-open {
+  border-right: 2px solid white;
+}
+.game-type form input[type=radio] {
+  /* IE 9 */
+  /* Chrome, Safari, Opera */
+  transform: scale(2.3);
+  background-color: transparent !important;
+}
+.game-type form label {
+  padding: 5px;
+  font-size: 22px;
+  margin-left: 3rem;
+}
+
+.var-type-digit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 16px;
+  border: 2px solid white;
+}
+.var-type-digit div.form-check {
+  padding: 8px;
+  box-sizing: border-box;
+  border-right: 2px solid white;
+}
+.var-type-digit div.form-check:last-child {
+  border-right: none;
+}
+
+.choose-digit {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.bett-var-type-sf h3 {
+  text-align: center;
+  font-size: 22px;
+}
+.bett-var-type-sf input {
+  width: 49%;
+  padding: 0.4rem 0.4rem 0.4rem 2rem;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.bett-var-type-sf button {
+  margin: 1rem 0rem 1rem 43%;
+  padding: 0.6rem 1.2rem;
+  background-image: linear-gradient(90deg, #ffeb76, #c09a2f);
+  border-radius: 10px;
+  font-weight: 600;
+}
+.bett-var-type-sf button.btn-v2 {
+  margin-left: 37.75%;
+}
+
+.chiplist-wrapper {
+  margin: 1.6rem 0rem;
+}
+.chiplist-wrapper h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.chiplist-wrapper .chiplist ul {
+  display: flex;
+  justify-content: center;
+  margin-left: -2rem;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+}
+.chiplist-wrapper .chiplist ul img {
+  width: 5rem;
+}
+
+.bett-table {
+  margin: 1rem 0rem;
+}
+.bett-table table {
+  width: 100%;
+}
+.bett-table table tr {
+  display: flex;
+  justify-content: space-between;
+}
+.bett-table table thead {
+  border-bottom: 2px solid #fff;
+  text-transform: uppercase;
+}
+.bett-table table thead tr {
+  padding-bottom: 0.5rem;
+}
+.bett-table table tbody {
+  border-bottom: 2px solid #fff;
+  height: 100px;
+}
+
+.bett-action {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10%;
+}
+.bett-action a {
+  background: linear-gradient(90deg, #ffeb76, #c09a2f);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.bz-wrapper {
+  padding: 5rem;
+  margin-top: 5rem;
+}
+.bz-wrapper img {
+  width: 100%;
+}
+.bz-wrapper h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.mklist {
+  margin: 0px 5rem;
+  background-color: white;
+  z-index: 100;
+}
+
+.mktitem {
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 3rem;
+  border: 2px solid goldenrod;
+}
+.mktitem h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.mktitem h3 {
+  font-size: 20px;
+}
+.mktitem .mktitem-result {
+  background: linear-gradient(90deg, #ffeb76, #c09a2f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mktitem .mktitem-time {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.mktitem .mktitem-time .mktitem-time-open, .mktitem .mktitem-time .mktitem-time-close {
+  background: linear-gradient(90deg, #ffeb76, #c09a2f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mktitem .mktitem-time .mktitem-time-bar {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  margin-top: 0.8rem;
+}/*# sourceMappingURL=main.css.map */

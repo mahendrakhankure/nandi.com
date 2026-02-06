@@ -1,0 +1,157 @@
+<?php 
+    include 'includes/header.php'; 
+?>
+ <style type="text/css">
+    /*.clockdiv > div{
+        border-radius: 3px;
+        background: #00BF96;
+        display: inline-flex;
+    }
+
+    .clockdiv div > span{
+        font-size: 22px;
+        border-radius: 3px;
+        background: #00816A;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+    }*/
+    #icn{
+        height: 25px;
+        width: 25px;
+        float: left;
+    }
+    #icn1{
+        height: 25px;
+        width: 25px;
+        float: right;
+    }
+    #icnText{
+        float: left;
+    }
+    #icnText1{
+        float: right;
+    }
+    .tv-ioco
+    {
+        margin-left: 12px;    
+    }
+    .l-txt        
+    {
+        margin-top: 28px;
+        margin-bottom: 0;
+        margin-left: -50px;
+    }
+    .r-txt
+    {
+        margin-bottom: 0;
+        margin-top: 25px;
+        margin-right: -40px;
+    }
+    .holi-ico    
+    {
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+    .mktitem-time.time-detail
+    {
+            margin-top: 30px;
+    }
+    .mktitem-wrapper .mktitem1 #kingtime {
+        margin-top: 40px;
+    }
+</style>
+<div class="container-fluid" >
+    <div class="row sec-margin mktlist app-heading">
+        <h3 class="resHead">
+            <?=urldecode($starlineName)?>
+        </h3>
+        
+        <?php
+            foreach($starlineTime as $data){
+                $sql = "SELECT result_patti,result_akda FROM starline_bazar_result WHERE bazar_name='".$data['bazar_name']."' AND time='".$data['id']."' AND result_date='".date('Y-m-d')."' ORDER BY id desc";
+                $res = $this->db->query($sql);
+                $row = $res->row_array();
+                // echo '<pre>';
+                // print_r($row);
+                // die();
+                if(empty($row['result_patti'])){
+                    $sql = "SELECT result_patti,result_akda FROM starline_bazar_result WHERE bazar_name='".$data['bazar_name']."' AND time='".$data['id']."' AND result_date='".date('Y-m-d', strtotime(' -1 day'))."' ORDER BY id desc";
+                    // echo $sql;
+                    $res = $this->db->query($sql);
+                    $row = $res->row_array();
+                }
+                
+                if(!empty($row)){
+                    $r=$row['result_patti'].'-'.$row['result_akda'];
+                    $u=$r;
+                }else{
+                    $r='***-*';
+                    $u='--';
+                }
+                // echo $data['time'];
+        ?>
+            <div class="col-lg-3 col-md-4 col-sm-6" >  
+                <a href="<?=base_url().'627c9e487ce67279be0ba390dbbf2735/'.$data['id'].'/'.$u.'/'.$data['bazar_name'].$tUrl?>">
+                    <div class="mktitem-wrapper">
+                        <div class="dark mktitem1 text-center starlinemkt">
+                            <?php
+                                if($data['icon_status']=='1'){
+                            ?>
+                                <img src="<?=base_url().$data['icon1']?>" class="tv-ioco" id="icn">
+                                <p id="icnText" class="l-txt"><?=$data['text']?></p>
+                            <?php } ?>
+                            <?php
+                                if($data['icon_status1']=='1'){
+                            ?>
+                                <img src="<?=base_url().$data['icon2']?>" class="holi-ico " id="icn1">
+                                <p id="icnText1" class="r-txt"><?=$data['text1']?></p>
+                            <?php } ?>
+                            <!-- <img src="<?=base_url().$data['icon']?>" id="icn"><br>
+                            <p id="icnText"><?=$data['text']?></p>
+                            <img src="<?=base_url().$data['icon1']?>" id="icn1"><br>
+                            <p id="icnText1"><?=$data['text1']?></p> -->
+                            <div class="mkttopchip"></div>
+                            <div class="mktglowchip"></div>
+                            <div class="mkttime-inner">
+                                <div class="clockdiv" data-date="<?=$data['time']?>">
+                                <!-- <div class="clockdiv" data-date="<?=date('Y-m-d H:i:s',strtotime($data['time']))?>"> -->
+                                    <div style="display:none;">
+                                    <span class="days"></span>
+                                    </div>
+                                    <div>
+                                        <span class="hours"></span>H
+                                    </div>
+                                    <div>
+                                        <span class="minutes"></span>M
+                                    </div>
+                                    <div>
+                                        <span class="seconds"></span>S
+                                    </div>
+                                </div>
+                                
+                                <h2 class="mktitem-name"><?=date('g:i a',strtotime($data['time']))?></h2>
+                                <h3 class="mktitem-result resDisply"><?=$r?></h3>
+                                <?php
+                                    if(date('H:i:s',strtotime($data['time'])) > date('H:i:s')){
+                                        echo '<p class="mktitem-day running">Running For Today</p>';
+                                    }else{
+                                        echo '<p class="mktitem-day closing">Closed For Today</p>';
+                                    }
+                                ?> 
+                            </div> 
+                            <div class="mktbottomchip"></div> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <?php
+            }
+        ?> 
+        
+        
+    </div>
+</div>
+
+<?php include 'includes/footer.php'; ?>

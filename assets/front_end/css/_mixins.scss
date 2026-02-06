@@ -1,0 +1,44 @@
+
+
+// ====================Border=======================
+// Border
+@mixin comp_border($color: $white-color ){
+    border: 2px solid $color;
+}
+// Border
+@mixin comp_border-bottom($color: $white-color ){
+    border-bottom: 2px solid $color;
+}
+// Border with Linear Gradient
+@mixin comp_border_lng($width : 2px, $style : solid,  $image : $bg-secondary ) {
+   border-width: $width;
+   border-style: $style;
+   border-image-source: $image;
+   border-image-slice: 10;
+}
+
+
+
+// =======================Border Radius==========================
+// Border-Radius
+@mixin comp_border_rad($radius){
+    border-radius:$radius;
+}
+
+@mixin text-color-lg($linear : $bg-secondary){
+        background: $linear;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+// ===================== Headings ========================
+
+@mixin center-heading($font-size: $lg-font) {
+    text-align: center;
+    font-size: $lg-font;
+}

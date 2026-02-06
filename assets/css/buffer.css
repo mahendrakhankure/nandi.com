@@ -1,0 +1,61 @@
+@media screen and (min-width: 768.01px) and (max-width: 992px) {
+    #streming1 {
+      width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #streming1 iframe {
+      width: 100% !important;
+      height: 303.75px !important;
+    }
+  }
+  
+  @media screen and (min-width: 420.01px) and (max-width: 600px) {
+    #streming1 {
+      width: 100% !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #streming1 iframe {
+      width: 100% !important;
+      height: 56.25vw !important;
+    }
+    #streming1 {
+      width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #streming1 iframe {
+      width: 100% !important;
+      height: 236.25px !important;
+    }
+  }
+  @media screen and (min-width: 340.01px) and (max-width: 420px) {
+    #streming1 {
+      width: 100% !important;
+    }
+    #streming1 iframe {
+      width: 100% !important;
+      height: 56.25vw !important;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    #streming1 {
+      width: 100% !important;
+    }
+    #streming1 iframe {
+      width: 100% !important;
+      height: 56.25vw !important;
+    }
+  }
+  
+  #streming1 {
+    width: 540px;
+    position: relative;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  #streming1 iframe {
+    width: 100% !important;
+    height: 303.75px;
+  }

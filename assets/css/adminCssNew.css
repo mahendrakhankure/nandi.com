@@ -1,0 +1,277 @@
+      /* input[type='date'] {
+        vertical-align: top !important;
+      } */
+      .content-header {
+        margin-bottom: 2rem;
+      }
+        #userTable_wrapper {
+          text-align: center;
+          overflow: scroll;
+          padding-bottom: 1.5rem;
+        }
+        #userTable_wrapper .dataTables_length {
+          float: left !important;
+        }
+        #userTable_wrapper table.dataTable th, #userTable_wrapper table.dataTable td {
+          min-width: -webkit-max-content;
+          min-width: -moz-max-content;
+          min-width: max-content;
+          word-wrap: normal;
+          white-space: nowrap;
+        }
+        .form-inline input {
+          padding: 8px 16px;
+          border-radius: 5px;
+        }
+
+
+        .box {
+          overflow: scroll;
+        }
+        table th, table td {
+          min-width: -webkit-max-content;
+          min-width: -moz-max-content;
+          min-width: max-content;
+          word-wrap: normal;
+          white-space: nowrap;
+        }
+
+
+        .boxRegular, .mycard, .starMain, .kingMain  {
+          background-color: #279cc2;
+          box-shadow: 2px 2px 15px 0px #d5d5d5, -2px -2px 15px 0px #d5d5d5;
+          border-radius: 5px;
+          color: #fff !important;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        .boxRegular .t, .mycard .t, .starMain .t, .kingMain .t {
+          color : #fff;
+        }
+        .mycard .inner {
+          padding : 10px 25px !important;
+        }
+        .mycard h4 {
+          text-align: center;
+          font-weight: 900;
+          text-transform: uppercase;
+          white-space: nowrap;
+          font-size : 13px;
+        }
+        .mycard  p {
+          font-size: 13px;
+          margin-bottom:8px;
+        }
+        .mycard  p span {
+          font-size : 11px;
+          vertical-align: middle;
+        }
+        .mycard  p span.ctext {
+          display:inline-block;
+          width : 90px;
+          white-space: normal;
+        }
+        .mycard  p span.cvalue {
+          font-size : 13px;
+          margin-left: 5px;
+        }
+        .mycard .small-box-footer {
+          display: block !important;
+          color: #fff !important;
+          background: #979797 !important;
+          text-decoration: none !important;
+          border-radius: 0px 0px 5px 5px !important;
+          padding: 5px 0px !important;
+        }
+
+        .boxRegular {
+
+          padding: 10px 15px;
+          margin-bottom: 25px;
+        }
+        .boxRegular .inner {
+          padding: 10px 15px;
+        }
+        .boxRegular h4 {
+          text-align : center;
+          font-weight : 900;
+          margin-top : 0px;
+          white-space: nowrap;
+          font-size  :13px;
+        }
+        .boxRegular .time {
+          display:flex;
+          justify-content : center;
+          gap : 0rem 2rem;
+          margin-bottom:0px;
+        }
+        .boxRegular span {
+          font-size : 11px;
+          text-transform : uppercase;
+          font-weight : 700;
+        }
+        .boxRegular span.ctext  {
+          display:inline-block !important;
+          width : 90px;
+        }
+        .boxRegular span.cvalue {
+          font-size : 13px;
+          margin-left : 5px;
+        }
+
+
+        .star-wrapper {
+          padding-top : 2rem;
+        }
+        .starMain {
+          margin-bottom : 2rem;
+        }
+        .starMain .inner {
+          padding : 10px 15px;
+          padding-bottom:25px;
+          color:#fff;
+          font-weight : 700;
+          text-transform: uppercase;
+        }
+        .starMain .inner h4 {
+          font-weight : 900;
+          text-align:center;
+          white-space: nowrap;
+          font-size : 13px;
+        }
+        .starMain .inner span {
+          font-size : 11px;
+          vertical-align: middle;
+        }
+        .starMain .inner span.ctext {
+          display: inline-block;
+          width:90px;
+        }
+        .starMain .inner span.cvalue {
+          margin-left: 5px;
+          font-size : 13px;
+        }
+
+
+         .king-wrapper {
+          padding-top : 2rem;
+        }
+        .kingMain {
+          margin-bottom : 2rem;
+        }
+        .kingMain .inner {
+          padding : 10px 15px;
+          padding-bottom:25px;
+          color:#fff;
+          font-weight : 700;
+          text-transform: uppercase;
+        }
+        .kingMain .inner h4 {
+          font-weight : 900;
+          text-align:center;
+          margin-bottom: 0rem;
+          white-space: nowrap;
+          font-size  : 13px;
+        }
+        .kingMain .inner span.time {
+          display: inline-block;
+          font-size: 13px;
+          width: 100%;
+          text-align: center;
+        }
+        .kingMain .inner span {
+          font-size : 11px;
+          vertical-align: middle;
+        }
+        .kingMain .inner span.ctext {
+          display: inline-block;
+          width:90px;
+        }
+        .kingMain .inner span.cvalue {
+          margin-left: 5px;
+          font-size : 13px;
+        }
+
+
+        .form-inline {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          flex-wrap: wrap;
+          margin-bottom: 1.5rem;
+          margin-top: 0rem;
+        }
+        .form-inline input, .form-inline select {
+          padding: 4px 16px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 15px 1px #d8d3d3;
+          border: 2px solid #eee;
+          width: 225px !important;
+        }
+
+
+        .content-header {
+            display: flex;
+            justify-content : space-between;
+        }
+        .content-header h1 {
+          font-size : 24px;
+          color:#367fa9;
+        }
+        .content-header .add-button {
+          margin-top : 18px;
+        }
+
+        #mysearch {
+          display: flex;
+          justify-content: center;
+          gap: 16px;
+          flex-wrap: wrap;
+          margin-top: -3rem;
+        }
+        #mysearch input, #mysearch button, #mysearch select {
+          width: 180px;
+        }
+        @media only screen and (max-width: 600px) {
+          .content-header h1 {
+            font-size : 18px;
+            margin-top: 8px;
+          }
+          .content-header .add-button {
+          margin-top : 8px;
+        }
+        #mysearch input, #mysearch button, #mysearch select {
+            width: 225px;
+        }
+        }
+        @media only screen and (max-width: 486px) {
+          #mysearch  {
+              flex-direction: column;
+              align-items : center;
+          }
+        }
+
+
+        .user-header {
+          height: 175px;
+          padding: 10px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .user-footer a {
+          border-radius : 20px !important;
+        }
+        .user-footer a.btn-info {
+          background-color: #00c0ef !important;
+          border-color: #00acd6 !important;
+        }
+        .user-footer a.btn-danger {
+          background-color: #dd4b39 !important;
+          border-color: #d73925 !important;
+        }
+        /* select option:first {
+          color: #999;
+        } */

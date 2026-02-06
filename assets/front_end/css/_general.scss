@@ -1,0 +1,53 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    body {
+        background-color: $bg-primary;
+        color: $white-color;
+        width: 100%;
+    
+    }
+}
+ 
+.container-fluid {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    .row {
+        --bs-gutter-x: 0rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white-color;
+    &:hover {
+        cursor: pointer;
+    }
+}
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+ul {
+    list-style: none;
+}
+ 
+
+ 
+.dark {
+    background-color: $bg-primary-dark;
+}
+.sec-margin {
+    margin-top: 1.6rem !important;
+}
+.ele-margin-tb {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+    

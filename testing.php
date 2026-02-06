@@ -1,0 +1,1 @@
+<iframe src="https://matkaui.livedealersol.com/video/table2" title="Live Satta Result" id="iFrameWin" width="48%" height="400px;"></iframe>

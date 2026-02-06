@@ -1,0 +1,918 @@
+
+/* General CSS */
+* {
+  margin: 0px;
+  padding: 0px; 
+}
+:root {
+  --bg-secondary :  linear-gradient(90deg, #ffeb76, #c09a2f);
+  --bg-ternary : linear-gradient(90deg, #aa0073, #860022);
+  --bg-primary : #420518;
+  --bg-primary-dark: #28040f;
+  --text-color-secondary : #000000;
+}
+.container-fluid {
+  margin: 0px !important;
+  padding: 0px !important;
+   
+}
+.container {
+  padding: 0px !important;
+  
+}
+body {
+  background-color: var(--bg-primary);
+  color: #ffffff;
+}
+
+.darkbg {
+  background-color: var(--bg-primary-dark);
+}
+
+.myborder {
+  border-width: 2px;
+  border-style: solid;
+  border-image-source: var(--bg-secondary);
+  border-image-slice: 10;
+}
+/* ========== General Component ======== */
+/* Topbar Styling */
+.topbar-wrapper {
+  width: 100%;
+  height: 50px;
+}
+.topbar-content {
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+}
+.topbar-content .diposit-btn  {
+  background-image: var(--bg-secondary);  
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 5px;
+  
+}
+.topbar-content p {
+  display: inline;
+}
+ 
+.topbar-content p span i{
+  border: 2px solid white;
+  padding: 5px 6px;
+  border-radius: 50%;
+}
+
+/* ================********* PAGE1 STYLING************=================== */
+
+ 
+
+
+/* Heading Styleing */
+.heading-wrapper  {
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+   
+}
+.heading-wrapper .heading h2{
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.2;
+  line-height: 25px;
+  text-transform: uppercase;
+  background: var(--bg-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Days Styling */
+ 
+.days-wrapper {
+  width: 100%;
+}
+ .days-wrapper, .days-border  {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-image: var(--bg-secondary);
+}
+/* Random Number Generator */
+.random-num-wrapper   {
+  margin-top: 60px;
+}
+.random-num {
+  font-size: 22px;
+}
+
+/* Opening and Closing Time Styling */
+.open-close{
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.open-close .pipe {
+  font-size: 28px;
+}
+/* Games Styling */
+.ticket-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.ticket-wrapper img {
+  width: 90px;
+  margin-bottom: 8px;
+}
+ 
+ 
+/* ================********* PAGE2 STYLING************=================== */
+ 
+ 
+.div-center {
+  display: flex;
+  justify-content: center;
+}
+.game-name {
+  width: 20vw;
+   
+  
+}
+.game-name h3 {
+ text-align: center;   
+ font-size: 20px;
+  
+}
+.game-notes {
+  margin: 16px 0px;
+}
+.game-notes h3 {
+  text-align: center;
+  font-size: 16px;
+}
+.game-time {
+  width: 25vw;
+}
+.game-time h3  {
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+.game-type  {
+  border: 2px solid white;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.game-type form {
+   display: flex;
+   justify-content: space-between;
+    
+}
+.game-type form div {
+  width: 49%;
+  display: inline-block;
+  padding-left: 2rem;
+}
+.game-type .gt-open {
+  border-right: 2px solid white;
+}
+.game-type input[type=radio] {
+  -ms-transform: scale(2.5); /* IE 9 */
+  -webkit-transform: scale(2.5); /* Chrome, Safari, Opera */
+   transform: scale(2.5);
+   background-color: var(--bg-primary);
+}
+.game-type form label  {
+    padding:5px;
+    font-size: 25px;
+    margin-left: 3rem;  
+}
+ 
+ 
+/* Game List(Chips) */
+.mychips-wrapper {
+  margin-top: 10px;
+}
+.mychips-wrapper h4{
+  font-size: 22px;
+}
+.mychips {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+.chip-option-wrapper {
+  display: inline-block;
+  flex-direction: column;
+  width: 56px;
+  margin: 10px;
+   
+}
+
+.chip {
+  /* display: inline; */
+   margin: 10px;
+  /* border-width: 6px 3px;
+  border-style: solid;
+  border-image-source: var(--bg-secondary);
+  border-image-slice: 10; */
+
+}
+.chip img{
+  width: 60px;
+   
+}
+
+/* Chipbox Styling */
+.c-boxes  {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.chipbox-wrapper  {
+  display: flex;
+  justify-content: center;
+  gap:25px 8%;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.chipbox-inner-wrapper {
+   display: flex;
+   justify-content: center;
+}
+.chipbox-inner-wrapper span {
+  margin-right: 10px;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.chipbox-wrapper .chipbox {
+  border: 4px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+   
+}
+.chipbox-wrapper .chipbox img {
+  width: 70px;
+  height: 70px;
+   
+}
+/* Total Wrapper */
+.total-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding: 15px 0px;
+}
+.total-wrapper .undo {
+  margin-top: 0.5rem;
+}
+.total-wrapper .undo span {
+  padding: 7px 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-top: 5px;
+  background-color: var(--bg-primary);
+}
+ 
+.total-wrapper .undo p{
+  margin-top: 10px;
+}
+.total-wrapper .total .total-box  div{
+  background-color: var(--bg-primary);
+  padding: 10px;
+  width: 20rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline-block;
+   
+}
+.total-box  {
+  display: flex;
+  justify-content: center;
+   
+}
+.total-box h4{
+  width: 10rem;
+  margin-top: 8px;
+}
+ 
+
+/* Chipbox Action  */
+.chipbox-action {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10%;
+}
+.chipbox-action a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  letter-spacing: 1.3;
+  background: var(--bg-secondary);
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
+/* ================********* PAGE 3 STYLING************=================== */
+.p3-game-list-wrapper {
+  margin: 1.3rem;
+   
+}
+.p3-game-list   {
+  /* border-width: 2px;
+  border-style: solid;
+  border-image: var(--bg-secondary);
+  border-image-slice: 10;
+  border-radius: 40px;
+  background-origin: border-box;
+  background-clip: sec content-box, border-box;
+  -moz-background-clip: content-box, border-box;
+  -webkit-background-clip: content-box, border-box; */
+  border-radius: 40px;
+  border: 2px solid goldenrod;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 1rem;
+   
+}
+.p3-game-list h3  {
+  background: var(--bg-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p3-game-list  .p3-open-close-time {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  column-gap: 5px;
+}
+ 
+.p3-game-list .p3-open-time {
+  background: var(--bg-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p3-game-list .p3-open-close-bar  {
+    content: " ";
+    height: 2px;
+    background-color: white;
+    margin-top: 0.8rem;
+}
+ 
+.p3-game-list .p3-close-time {
+  background: var(--bg-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================********* PAGE 4 STYLING************=================== */
+
+.game-selection {
+  margin-top: 10px;
+  background-image: var(--bg-ternary);
+}
+.game-selection select  {
+     background-color: transparent;
+     background-image: url("/assets/img/icons/right-angle.svg");
+     background-repeat: no-repeat;
+     background-size: 12px;
+     
+}
+ 
+
+
+/* ================********* PAGE 5 STYLING************=================== */
+
+.p5-bet-form h2{
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.2;
+  line-height: 25px;
+  text-transform: uppercase;
+  background: var(--bg-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.p5-bet-form input    {
+  width: 49%;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid white;
+}
+.p5-bet-form button{
+  margin: 20px;
+  display: inline;
+  margin-left: 40%;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background-image: var(--bg-secondary);
+  
+}
+table   {
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+table tr {
+  display: flex;
+  justify-content: space-between;
+}
+table tr.table-header {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+ 
+
+/* ############========= MEDIA QUERYIES=======############ */
+/* ######## Page1 Media Query ######### */
+ 
+@media only screen and (max-width: 992px) {
+ 
+ /* General Component */
+ 
+  
+  
+ .topbar-content .diposit-btn {
+   font-size: 15px;
+   padding-right: 8px;
+ }
+ .topbar-content p {
+   font-size: 15px;
+ }
+ .topbar-content p span i{
+   padding: 6px 8px;
+   border-radius: 50%;
+ }
+
+ 
+ /* #### Page 1 #### */
+ 
+ .heading-wrapper .heading h2{
+   font-size: 22px;
+ }
+ /* Days Styling */
+
+.days-wrapper, h4  {
+ font-size: 20px;
+}
+ 
+/* Random Number Generator */
+.random-num {
+ font-size: 20px;
+}
+
+/* Opening and Closing Time Styling */
+.open-close{
+ justify-content: space-between;
+ font-size: 20px;
+}
+.open-close .pipe {
+ font-size: 24px;
+}
+
+ .ticket-wrapper { 
+   gap: 25px;
+ }
+ .ticket-wrapper img {
+   width: 65px;
+   margin-bottom: 5px;
+ }
+ .ticket-wrapper p {
+   font-size: 15px;
+ }
+
+ /* #### Page 2 #### */
+
+.game-name {
+  width: 20vw; 
+}
+.game-name h3 {
+ text-align: center;   
+ font-size: 20px;
+  
+}
+.game-notes {
+  margin: 16px 0px;
+   
+}
+.game-notes h3 {
+  text-align: center;
+  font-size: 14px;
+}
+.game-time {
+  width: 25vw;
+}
+.game-time h3  {
+  text-align: center;
+  font-size: 20px;
+  padding: 6px 0px;
+}
+
+.game-type  {
+  border: 2px solid white;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.game-type form {
+   display: flex;
+   justify-content: space-between;
+    
+}
+.game-type form div {
+  width: 49%;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 2rem;
+}
+.game-type .gt-open {
+  border-right: 2px solid white;
+}
+.game-type input[type=radio] {
+  -ms-transform: scale(2.5); /* IE 9 */
+  -webkit-transform: scale(2.5); /* Chrome, Safari, Opera */
+   transform: scale(2.5);
+   background-color: transparent !important;
+}
+.game-type form label  {
+    padding:5px;
+    font-size: 25px;
+    margin-left: 3rem;  
+}
+ 
+ 
+
+
+/* Game List(Chips) */
+.mychips {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+.chip-option-wrapper {
+  display: inline-block;
+  flex-direction: column;
+  width: 56px;
+  margin: 10px;
+   
+}
+
+.chip {
+  /* display: inline; */
+   margin: 10px;
+  /* border-width: 6px 3px;
+  border-style: solid;
+  border-image-source: var(--bg-secondary);
+  border-image-slice: 10; */
+
+}
+.chip img{
+  width: 60px;
+   
+}
+
+/* Chipbox Styling */
+.c-boxes  {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.chipbox-wrapper  {
+  display: flex;
+  justify-content: center;
+  gap:25px 8%;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.chipbox-wrapper .chipbox {
+  border: 4px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+   
+}
+.chipbox-wrapper .chipbox img {
+  width: 70px;
+  height: 70px;
+   
+}
+/* Total Wrapper */
+.total-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding: 15px 0px;
+}
+.total-wrapper .undo {
+  margin-top: 0.5rem;
+}
+.total-wrapper .undo span {
+  padding: 7px 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-top: 5px;
+  background-color: var(--bg-primary);
+}
+ 
+.total-wrapper .undo p{
+  margin-top: 10px;
+}
+.total-wrapper .total .total-box  div{
+  background-color: var(--bg-primary);
+  padding: 10px;
+  width: 20rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline-block;
+   
+}
+.total-box  {
+  display: flex;
+  justify-content: center;
+   
+}
+.total-box h4{
+  width: 10rem;
+  margin-top: 8px;
+}
+ 
+
+/* Chipbox Action  */
+.chipbox-action {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10%;
+}
+.chipbox-action a {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  letter-spacing: 1.3;
+  background: var(--bg-secondary);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
+
+
+
+}
+@media only screen and (max-width: 768px) {
+   
+ /* General Component */
+ .topbar-wrapper {
+   height: 40px;
+ }
+ .topbar-content {
+   margin-top: 5px;
+ }
+ .topbar-content .diposit-btn {
+   font-size: 14px;
+   padding-right: 6px;
+ }
+ .topbar-content p {
+   font-size: 14px;
+ }
+ .topbar-content p span i{
+   padding: 5px 6px;
+   border-radius: 50%;
+ }
+
+ 
+ /* #### Page 1 #### */
+ .heading-wrapper  {
+ height: 45px;  
+ }
+ .heading-wrapper .heading h2{
+   font-size: 20px;
+ }
+ /* Days Styling */
+
+.days-wrapper, h4  {
+ font-size: 18px;
+}
+ 
+/* Random Number Generator */
+.random-num {
+ font-size: 18px;
+}
+
+/* Opening and Closing Time Styling */
+.open-close{
+ justify-content: space-around;
+ font-size: 18px;
+}
+.open-close .pipe {
+ font-size: 22px;
+}
+
+ .ticket-wrapper { 
+   gap: 20px;
+ }
+ .ticket-wrapper img {
+   width: 65px;
+   margin-bottom: 4px;
+ }
+ .ticket-wrapper p {
+   font-size: 14px;
+ }
+
+/* ##########  Page 2 ########## */
+
+ 
+.game-name {
+  width: 30vw; 
+  margin: 10px;
+}
+.game-name h3 {  
+ font-size: 18px;
+}
+.game-notes {
+  margin: 10px 0px;
+}
+.game-notes h3 {
+  font-size: 18px;
+}
+.game-time {
+  width: 40vw;
+  margin: 10px;
+}
+.game-time h3  {
+  font-size: 18px;
+}
+
+.game-type  {
+   width: 100%;
+   margin: 0px auto;
+}
+ 
+.game-type form label  {
+    font-size: 22px; 
+}
+ 
+
+/* Game List(Chips) */
+.mychips {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.chip-option-wrapper {
+  display: inline-block;
+  flex-direction: column;
+  width: 35px;
+  margin: 10px;
+   
+}
+
+.chip img{
+  width: 50px;
+   
+}
+
+/* Chipbox Styling */
+
+.chipbox-wrapper  {
+  gap:20px 6%;
+}
+.chipbox-wrapper .chipbox {
+  width: 70px;
+  height: 70px;
+   
+}
+.chipbox-wrapper .chipbox img {
+  width: 55px;
+  height: 55px;
+}
+
+.total-wrapper .total .total-box  div{
+  width: 15rem;
+}
+.c-boxes {
+  box-sizing: border-box;
+  width: 96%;
+  margin: 0px auto;
+}
+ 
+ 
+}
+@media only screen and (max-width: 600px) {
+   
+ /* General Component */
+ .topbar-wrapper {
+   height: 35px;
+ }
+ .topbar-content {
+   margin-top: 4px;
+ }
+ .topbar-content .diposit-btn {
+   font-size: 13px;
+   padding-right: 5px;
+ }
+ .topbar-content p {
+   font-size: 13px;
+ }
+ .topbar-content p span i{
+   padding: 4px 5px;
+   border-radius: 50%;
+ }
+
+ 
+ /* #### Page 1 #### */
+ .heading-wrapper  {
+ height: 40px;  
+ }
+ .heading-wrapper .heading h2{
+   font-size: 18px;
+ }
+ /* Days Styling */
+
+.days-wrapper, h4  {
+ font-size: 16px;
+}
+ 
+/* Random Number Generator */
+.random-num {
+ font-size: 16px;
+}
+
+/* Opening and Closing Time Styling */
+.open-close{
+  justify-content: space-around;
+ font-size: 16px;
+}
+.open-close .pipe {
+ font-size: 20px;
+}
+
+ .ticket-wrapper { 
+   gap: 15px;
+ }
+ .ticket-wrapper img {
+   width: 60px;
+   margin-bottom: 3px;
+ }
+ .ticket-wrapper p {
+   font-size: 12px;
+ }
+ .total-wrapper .total .total-box  div{
+  width: 10rem;
+}
+}
+@media only screen and (max-width: 480px) {
+  
+  
+ /* General Component */
+ 
+ 
+ .topbar-content .diposit-btn {
+   font-size: 12px;
+ }
+ .topbar-content p {
+   font-size: 12px;
+ }
+ .topbar-content p span i{
+   padding: 3px 4px;
+   border-radius: 50%;
+ }
+
+ /* #### Page 1 #### */
+  
+ .ticket-wrapper img {
+   width: 50px;
+   margin-bottom: 3px;
+ }
+ .ticket-wrapper p {
+   font-size: 10px;
+ }
+}
+
+ 

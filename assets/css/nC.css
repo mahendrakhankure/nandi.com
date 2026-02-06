@@ -1,0 +1,25 @@
+.nC{
+    color:#3c8dbc !important;
+}
+.skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: #367fa9 !important;
+}
+
+.skin-blue .sidebar a {
+    color: #ffffff !important;
+}
+
+.skin-blue .sidebar-menu>li.header {
+    color: #ffffff !important;
+    background: #387fa2 !important;
+}
+
+.skin-blue .sidebar-menu>li>.treeview-menu {
+    margin: 0 1px;
+    background: #17485c !important;
+}
+
+.skin-blue .sidebar-menu>li:hover>a,.skin-blue .sidebar-menu>li.active>a,.skin-blue .sidebar-menu>li.menu-open>a {
+    color: #fff;
+    background: #00e5ff !important;
+}

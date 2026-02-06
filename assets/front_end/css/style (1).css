@@ -1,0 +1,472 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+* body {
+  background-color: #420518;
+  color: #eee;
+  width: 100%;
+}
+
+.container-fluid {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.container-fluid .row {
+  --bs-gutter-x: 0rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #eee;
+}
+a:hover {
+  cursor: pointer;
+}
+
+input {
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.dark {
+  background-color: #28040f;
+}
+
+.sec-margin {
+  margin-top: 1.6rem !important;
+}
+
+.ele-margin-tb {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.mar-top-bottom {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.heading-center {
+  font-size: 20px;
+  text-align: center;
+  margin: 0.6rem 0rem;
+}
+
+.topbar-wrapper {
+  width: 100%;
+  height: 3rem;
+  background-color: #28040f;
+}
+.topbar-wrapper .topbar-content {
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.topbar-wrapper .topbar-content .diposit-btn {
+  background-image: linear-gradient(90deg, #ffeb76, #c09a2f);
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.topbar-wrapper .topbar-content p {
+  display: inline-block;
+}
+.topbar-wrapper .topbar-content p span i {
+  border-radius: 50%;
+  padding: 5px 6px;
+  border: 2px solid #eee;
+}
+
+.app-heading h2 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.2;
+  line-height: 25px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ffeb76, #c09a2f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.batt-name {
+  width: 20vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.batt-name h3 {
+  border: 2px solid goldenrod;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.batt-notes h3 {
+  text-align: center;
+  font-size: 22px;
+}
+
+.batt-date {
+  width: 25vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid goldenrod;
+  padding: 5px 10px;
+}
+.batt-date select {
+  background-color: #28040f;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  color: #eee;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.batt-date select:focus {
+  outline: 0 !important;
+}
+
+.htp {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.htp a {
+  border-bottom: 2px solid goldenrod;
+  padding-bottom: 0.3rem;
+}
+
+.game-type {
+  border: 2px solid #eee;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.game-type form {
+  display: flex;
+  justify-content: space-between;
+}
+.game-type form div {
+  width: 49%;
+  display: inline-block;
+  padding-left: 2rem;
+}
+.game-type form .gt-open {
+  border-right: 2px solid white;
+}
+.game-type form input[type=radio] {
+  /* IE 9 */
+  /* Chrome, Safari, Opera */
+  transform: scale(2.3);
+  background-color: transparent !important;
+}
+.game-type form label {
+  padding: 5px;
+  font-size: 22px;
+  margin-left: 3rem;
+}
+
+.var-type-digit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 16px;
+  border: 2px solid white;
+}
+.var-type-digit div.form-check {
+  padding: 8px;
+  box-sizing: border-box;
+  border-right: 2px solid white;
+}
+.var-type-digit div.form-check:last-child {
+  border-right: none;
+}
+
+.choose-digit {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.bett-var-type-sf h3 {
+  font-size: 20px;
+}
+.bett-var-type-sf .var-type-sf {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.bett-var-type-sf .var-type-btn {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+.bett-var-type-sf input {
+  padding: 0.4rem 0.4rem 0.4rem 2rem;
+  border-radius: 10px;
+  border: 2px solid #eee;
+}
+.bett-var-type-sf button {
+  padding: 0.4rem 1.2rem;
+  background-image: linear-gradient(90deg, #ffeb76, #c09a2f);
+  border-radius: 10px;
+  font-weight: 600;
+  width: 10rem;
+}
+.bett-var-type-sf button.right-al {
+  margin-left: auto;
+}
+
+.chiplist-wrapper {
+  margin: 1.6rem 0rem;
+}
+.chiplist-wrapper h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.chiplist-wrapper .chiplist ul {
+  display: flex;
+  justify-content: center;
+  margin-left: -2rem;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+}
+.chiplist-wrapper .chiplist ul img {
+  width: 5rem;
+}
+
+.bett-table {
+  margin: 1rem 0rem;
+}
+.bett-table table {
+  width: 100%;
+}
+.bett-table table tr {
+  display: flex;
+  justify-content: space-between;
+}
+.bett-table table thead {
+  border-bottom: 2px solid #eee;
+  text-transform: uppercase;
+}
+.bett-table table thead tr {
+  padding-bottom: 0.5rem;
+}
+.bett-table table tbody {
+  border-bottom: 2px solid #eee;
+  height: 100px;
+}
+.bett-table .total-bid {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 3rem 0rem 3rem;
+}
+.bett-table .total-bid p {
+  color: #ddd;
+}
+
+.bett-action {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.6rem;
+  margin-top: 0.5rem;
+}
+.bett-action a {
+  background: linear-gradient(90deg, #ffeb76, #c09a2f);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.cplace-outer {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  margin: 1.6rem 0rem;
+}
+.cplace-outer .cplace-wrapper {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem 1rem;
+  flex-wrap: wrap;
+}
+.cplace-outer .cplace-wrapper .cplace {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.cplace-outer .cplace-wrapper .cplace span {
+  align-self: center;
+  font-size: 22px;
+}
+.cplace-outer .cplace-wrapper .cplace .cplace-box {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  padding: 0.2rem;
+  width: 4.5rem;
+  height: 4.9rem;
+}
+.cplace-outer .cplace-wrapper .cplace .cplace-box img {
+  width: 100%;
+}
+.cplace-outer .total-undo {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+.cplace-outer .total-undo .undo-wrapper span {
+  border: 2px solid #eee;
+  border-radius: 50%;
+  padding: 0.2rem 0.4rem;
+}
+.cplace-outer .total-undo .undo-wrapper p {
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+.cplace-outer .total-undo .total-box h2 {
+  font-size: 20px;
+}
+.cplace-outer .total-undo .total-box span {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  padding: 0.2rem 10rem;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 1.6rem;
+}
+
+.bz-wrapper {
+  display: grid;
+  grid-template-areas: ". 1fr 1fr 1fr .";
+  grid-template-rows: 100vh;
+  justify-content: center;
+  grid-gap: 20px;
+  margin-top: -50px;
+}
+.bz-wrapper .bazar {
+  text-align: center;
+  align-self: center;
+}
+.bz-wrapper .bazar img {
+  width: 180px;
+}
+.bz-wrapper h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.mklist {
+  margin: 0px 5rem;
+  background-color: white;
+  z-index: 100;
+}
+
+.mktitem {
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 3rem;
+  border: 2px solid goldenrod;
+}
+.mktitem h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.mktitem h3 {
+  font-size: 20px;
+}
+.mktitem .mktitem-result {
+  background: linear-gradient(90deg, #ffeb76, #c09a2f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mktitem .mktitem-time {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.mktitem .mktitem-time .mktitem-time-open, .mktitem .mktitem-time .mktitem-time-close {
+  background: linear-gradient(90deg, #ffeb76, #c09a2f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mktitem .mktitem-time .mktitem-time-bar {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  margin-top: 0.8rem;
+}
+
+.gv-days {
+  border: 2px solid goldenrod;
+  border-left: none;
+  border-right: none;
+  margin: 1rem 0rem;
+}
+.gv-days h3 {
+  text-align: center;
+  font-size: 22px;
+}
+.gv-days h3 span {
+  padding: 0.2rem 0.4rem;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.gv-open-close {
+  display: flex;
+  justify-content: space-between;
+}
+.gv-open-close div {
+  font-size: 20px;
+}
+
+.gamelist {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.gamelist .game {
+  text-align: center;
+}
+.gamelist img {
+  width: 4.5rem;
+}
+.gamelist p {
+  margin-top: 0.5rem;
+  max-width: 5rem;
+  font-size: 14px;
+}/*# sourceMappingURL=main.css.map */

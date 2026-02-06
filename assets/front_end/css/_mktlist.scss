@@ -1,0 +1,41 @@
+// Market List CSS
+ .mklist {
+     margin: 0px 5rem;
+     background-color: white;
+     z-index: 100;
+ }
+ 
+.mktitem {
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    @include comp_border_rad(3rem);
+    @include comp_border($bd-color);
+    
+    h2 {
+        font-size: $h2-lg;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: $h3-lg;
+    }
+
+    .mktitem-result {
+         @include text-color-lg();
+    }
+    .mktitem-time{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        .mktitem-time-open, .mktitem-time-close {
+            @include text-color-lg();
+        }
+        .mktitem-time-bar {
+            content: "";
+            width: 50%;
+            height: 2px;
+            background-color: white;
+            margin-top: 0.8rem;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+
+  h4{
+    color: white;
+  }
+  
+  .wheelContainer2{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    max-width: 100%;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, -50%);
+  }
+  
+  .wheelSVG2{
+    position:relative;
+    width:100%;
+    visibility:hidden;
+    overflow:visible;
+    
+  }
+  .peg2{
+    visibility:hidden;
+  }
+  .wheelOutline2, .valueContainer2, .toast2, .centerCircle2{
+    pointer-events:none;
+  }
+  
+  .wheelText2{
+    pointer-events:none;
+    /* font-size:28px; */
+    /* fill:red; */
+    text-anchor:middle;
+    font-family:'Fjalla One', Arial, sans-serif;
+    -webkit-user-select: none;
+    user-select:none;
+    writing-mode: rl-tb;
+  }
+  
+  .toast2 {
+    position:absolute;
+    background-color:#26bfca;
+    border-radius:12px;
+    opacity:0;
+    text-align:center;
+    width: 80%;
+    height: 55vh;
+    background: url(/assets/media/bg-toast.png);
+  }
+  .toast2 p{
+    clear: both;
+    font-family:'Fjalla One', Arial, sand-serif;
+    margin:23px;
+    font-size:30px;
+    color:#ededed;
+    letter-spacing:-0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height:32px;
+    -webkit-transition: font-size .2s ease;
+    transition: font-size .2s ease;
+    -webkit-transition: line-height .2s ease;
+    transition: line-height .2s ease;
+  }
+  .mySpinBtn2{
+    position: sticky;
+    z-index: 1222;
+    margin-top: 52%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 28%;
+    background: aqua;
+    font-size: 25px;
+    border-top-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
+  
+
+  @media only screen and (max-width : 480px) {
+    .toast2 p, .toast2 span{
+      font-size: 20px;
+      line-height:18px;
+      color: white;
+    }
+    .wheelContainer2{
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width : 1400px) and (max-width : 1600px) {
+    .wheelContainer2{
+     width: 60%;
+     left: 30%;
+     top: 18%
+     }
+    .bgimage2{
+      width: 60%;
+           left: 20%;
+     }
+   }
+  
+  @media only screen and (min-width : 1200px) and (max-width : 1400px) {
+    .wheelContainer2{
+     width: 60%;
+     left: 30%;
+     top: 18%;
+     }
+    .bgimage{
+      width: 60%;
+      left:20%;
+     }
+  }
+  
+  @media only screen and (min-width : 525px) and (max-width : 600px) {
+    .wheelContainer2{
+      width: 500px;
+    }
+  }
+  
+  @media only screen and (min-width : 801px)  {
+    .toast2 p, .toast2 span{
+      font-size:58px;
+      line-height:60px;
+    }
+  }
+  
+  
+  @media only screen and (max-height : 480px) {
+    .toast2 p, .toast2 span{
+      font-size:33px;
+      line-height:35px;
+    }
+  }

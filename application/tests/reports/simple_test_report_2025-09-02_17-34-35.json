@@ -1,0 +1,102 @@
+{
+    "summary": {
+        "total_tests": 15,
+        "passed_tests": 13,
+        "failed_tests": 2,
+        "success_rate": 86.67,
+        "duration": 0.02,
+        "timestamp": "2025-09-02 17:34:35"
+    },
+    "results": [
+        {
+            "test": "Database Connection",
+            "status": "FAILED",
+            "message": "Could not connect to database: Access denied for user ''@'localhost' (using password: NO)",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "Main configuration",
+            "status": "PASSED",
+            "message": "File exists: config.php",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "Database configuration",
+            "status": "PASSED",
+            "message": "File exists: database.php",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "API configuration",
+            "status": "PASSED",
+            "message": "File exists: api.php",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "Test configuration",
+            "status": "PASSED",
+            "message": "File exists: test.php",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "CSRF Protection",
+            "status": "PASSED",
+            "message": "Security feature enabled",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "XSS Protection",
+            "status": "PASSED",
+            "message": "Security feature enabled",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "HTTPOnly Cookies",
+            "status": "PASSED",
+            "message": "Security feature enabled",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "Secure Log Path",
+            "status": "FAILED",
+            "message": "Security feature not found or disabled",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "Controllers directory",
+            "status": "PASSED",
+            "message": "Directory exists: application\/controllers",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "Models directory",
+            "status": "PASSED",
+            "message": "Directory exists: application\/models",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "Views directory",
+            "status": "PASSED",
+            "message": "Directory exists: application\/views",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "Config directory",
+            "status": "PASSED",
+            "message": "Directory exists: application\/config",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "Libraries directory",
+            "status": "PASSED",
+            "message": "Directory exists: application\/libraries",
+            "timestamp": "2025-09-02 17:34:35"
+        },
+        {
+            "test": "Tests directory",
+            "status": "PASSED",
+            "message": "Directory exists: application\/tests",
+            "timestamp": "2025-09-02 17:34:35"
+        }
+    ]
+}

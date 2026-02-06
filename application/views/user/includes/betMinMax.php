@@ -1,0 +1,2 @@
+<!-- <p class="betNote"> NOTE : Minimum <span id="minBetLimit"><?=$minBet;?></span> & Maximum <span id="maxBetLimit"><?=$maxBet;?></span> Bet Limit</p> -->
+<p class="betNote"> NOTE : Minimum <span id="minBetLimit"><?=$minBet;?></span> <span id="maxBetLimit" style="display:none"><?=$maxBet;?></span> Bet Limit</p>
